@@ -1,14 +1,20 @@
 #include <stdio.h>
-
-int main(){
+int main() {
     int a;
     scanf("%d",&a);
-    for (int i=0; i<a; i++){
-        for (int j=0; j<a-1; j++){
+    int k=0;
+    int l=0;
+    for(int i=0;i<a;i++){
+        for(int j=k;j<a-1;j++){
             printf(" ");
         }
-        printf("*");
+        k++;
+        for(int g=0;g<l+1;g++){
+            printf("*");
+            
+        }
+        l+=2;
+        printf("\n");
     }
-    printf("\n");
     return 0;
 }
